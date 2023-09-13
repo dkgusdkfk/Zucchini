@@ -32,8 +32,8 @@ export default function CreateItem() {
   const [uploadURL, setUploadURL] = useState("");
   //@ts-ignore
   const credentials: Credentials = {
-    accessKeyId: "AKIA2ZDVZIZHOHIYLSNH",
-    secretAccessKey: "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",
+    accessKeyId: "",
+    secretAccessKey: "",
   };
   const client = new S3Client({
     region: "ap-northeast-2",

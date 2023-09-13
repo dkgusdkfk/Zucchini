@@ -29,8 +29,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
-      password: zucchini
-      username: zucchini
+      password: { DB_PW }
+      username: { DB_USER }
     url: jdbc:mysql://i9a209.p.ssafy.io:3308/zucchini?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true
   data:
     web:
@@ -44,8 +44,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: zucchini0209@gmail.com
-    password: hodjzqjksgtvamss
+    username: { MAIL_USER }
+    password: { MAIL_PW }
     properties:
       mail.smtp.auth: true
       mail.smtp.starttls.enable: true
@@ -85,11 +85,11 @@ build:
 jwt:
   expiration: '1296000000'
   cookieName: zucchiniCookie
-  secret: dyAeHubOOc8KaOfYB6XEQoEj1QzRlVgtjNL8PYs1A1tymZvvqkcEU7L1imkKHeDa
+  secret: { JWT_SECRET }
 springfox:
   documentation:
     swagger:
       use-model-v3: 'false'
 openvidu:
   url: 'https://i9a209.p.ssafy.io:8443'
-  secret: 'pikapikapikachu'
+  secret: { OPENVIDU_SECRET }

@@ -344,8 +344,8 @@ class ConferenceRoom extends Component {
         const file = new Blob([blob]);
 
         const credentials = {
-          accessKeyId: "AKIA2ZDVZIZHOHIYLSNH",
-          secretAccessKey: "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",
+          accessKeyId: "",
+          secretAccessKey: "",
         };
         const client = new S3Client({
           region: "ap-northeast-2",
